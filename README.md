@@ -11,19 +11,15 @@ agent session with no separate pipeline to wire up. Drop in a PDF, spreadsheet,
 scan, or email and get back partitioned, enriched, chunked, and embedded output
 ready for RAG, vector stores, or agent memory. 60+ formats, one call.
 
-Docs: https://docs.unstructured.io/transform/overview
-
 ## Connection reference
-
-> ⚠️ **TODO: verify these values against platform-api #1162 before relying on them.**
-> They are drafted from sprint notes and public PRs and have not all been confirmed verbatim.
 
 | Field | Value |
 | --- | --- |
 | Endpoint | `https://mcp.transform.unstructured.io` |
-| Transport | Remote, streamable-HTTP |
-| Auth | OAuth 2.1 (DCR, PKCE, token refresh) for personal accounts; API key for business / multi-account / headless use. Confirm whether the key is passed as a bearer token. |
+| Transport | Remote, streamable-HTTP (connect directly, or via `npx mcp-remote` for clients without native remote-MCP support) |
+| Auth | OAuth 2.1 for interactive clients (DCR, PKCE, token refresh; browser flow via `mcp-remote`). API key as a bearer token (`Authorization: Bearer <API_KEY>`) for headless and programmatic clients. |
 | Tools | `request_file_upload_url`, `transform_files`, `check_transform_status`, `get_transform_results` |
+| Docs | https://docs.unstructured.io/transform/overview |
 | Support | mcp-support@unstructured.io |
 | Security | https://trust.unstructured.io |
 
