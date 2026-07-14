@@ -1,0 +1,10 @@
+# Integration metadata. Used to generate the index table in the root README.
+name:            # e.g. Vercel AI SDK
+category:        # registry | marketplace | agent-framework | automation
+auth:            # oauth | api-key
+vendor_pr:       # link to the PR in the vendor's repo, if any
+review_status:   # not-started | open | in-review | merged | rejected
+issue:           # link to the issue, if the vendor requires issue-first
+docs_pr:         # link to the Unstructured-IO/docs PR, if any
+owner:           # github handle
+notes:           # anything else worth knowing
