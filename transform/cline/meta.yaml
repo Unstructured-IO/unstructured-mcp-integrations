@@ -1,0 +1,14 @@
+# Integration metadata. Used to generate the index table in the root README.
+name: Cline
+category: marketplace
+auth: oauth / api-key  # OAuth (npx mcp-remote) is the default; a Bearer API-key variant is also documented
+vendor_pr:             # Cline MCP Marketplace submission (issue/website) - add when filed
+review_status: not-started
+issue:
+docs_pr: https://github.com/Unstructured-IO/docs/pull/986
+owner: simoncoombes
+notes: >
+  Cline MCP Marketplace listing. OAuth via npx mcp-remote (browser sign-in) is the
+  default connection; a direct streamableHttp variant with a Bearer API key is
+  documented for headless use. The marketplace submission needs the 400x400 PNG in
+  assets/ and the llms-install.md that Cline's agent follows to self-install.
