@@ -30,7 +30,7 @@ where each one stands.
 
 | Integration | Category | Auth | Status | Owner |
 | --- | --- | --- | --- | --- |
-| _(none yet)_ | | | | |
+| [Cline](transform/cline/) | marketplace | OAuth / API key | Not started | @simoncoombes |
 
 ## Adding an integration
 
