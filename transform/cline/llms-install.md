@@ -43,7 +43,9 @@ a direct remote server instead:
       "url": "https://mcp.transform.unstructured.io",
       "headers": {
         "Authorization": "Bearer YOUR_UNSTRUCTURED_API_KEY"
-      }
+      },
+      "disabled": false,
+      "autoApprove": []
     }
   }
 }
@@ -51,6 +53,10 @@ a direct remote server instead:
 
 Ask the user to paste their key themselves; never read it from other files, and
 never echo it back.
+
+If this direct streamable-HTTP connection fails to start, fall back to the OAuth
+method above. Some Cline versions have known bugs with manually configured
+streamable-HTTP remote servers.
 
 ## Troubleshooting
 
