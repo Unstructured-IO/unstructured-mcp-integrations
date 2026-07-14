@@ -17,7 +17,6 @@ ready for RAG, vector stores, or agent memory. 60+ formats, one call.
 | --- | --- |
 | Endpoint | `https://mcp.transform.unstructured.io` |
 | Transport | Remote, streamable-HTTP (connect directly, or via `npx mcp-remote` for clients without native remote-MCP support) |
-| Auth | OAuth 2.1 for interactive clients (DCR, PKCE, token refresh; browser flow via `mcp-remote`). API key as a bearer token (`Authorization: Bearer <API_KEY>`) for headless and programmatic clients. |
 | Tools | `request_file_upload_url`, `transform_files`, `check_transform_status`, `get_transform_results` |
 | Docs | https://docs.unstructured.io/transform/overview |
 | Support | mcp-support@unstructured.io |
