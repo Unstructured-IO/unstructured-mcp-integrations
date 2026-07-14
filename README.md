@@ -30,7 +30,7 @@ where each one stands.
 
 | Integration | Category | Auth | Status | Owner |
 | --- | --- | --- | --- | --- |
-| [Cline](transform/cline/) | marketplace | OAuth / API key | Not started | @simoncoombes |
+| [Cline](transform/cline/) | marketplace | OAuth / API key | Submitted ([cline#2027](https://github.com/cline/mcp-marketplace/issues/2027)) | @simoncoombes |
 
 ## Adding an integration
 

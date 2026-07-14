@@ -2,8 +2,8 @@
 name: Cline
 category: marketplace
 auth: oauth / api-key  # OAuth (npx mcp-remote) is the default; a Bearer API-key variant is also documented
-vendor_pr:             # Cline MCP Marketplace submission (issue/website) - add when filed
-review_status: not-started
+vendor_pr: https://github.com/cline/mcp-marketplace/issues/2027  # Cline MCP Marketplace submission
+review_status: open  # submitted 2026-07-14, awaiting Cline review
 issue:
 docs_pr: https://github.com/Unstructured-IO/docs/pull/986
 owner: simoncoombes
