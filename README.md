@@ -31,6 +31,13 @@ where each one stands.
 | Integration | Category | Auth | Status | Owner |
 | --- | --- | --- | --- | --- |
 | [Cline](transform/cline/) | marketplace | OAuth / API key | Not started | @simoncoombes |
+| [Gemini CLI](https://github.com/Unstructured-IO/transform-gemini-extension) | extension | OAuth | Published | @simoncoombes |
+
+Gemini CLI installs a whole repo with a root `gemini-extension.json`, so it ships
+as its own extension repo at
+[`Unstructured-IO/transform-gemini-extension`](https://github.com/Unstructured-IO/transform-gemini-extension)
+rather than under `transform/`. Install it with
+`gemini extensions install https://github.com/Unstructured-IO/transform-gemini-extension`.
 
 ## Adding an integration
 
