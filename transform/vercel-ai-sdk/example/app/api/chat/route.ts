@@ -45,6 +45,13 @@ const waitTool = tool({
   },
 });
 
+// The download_url from get_transform_results is served from the Transform host.
+// Restrict downloads to that host so a crafted prompt cannot turn this tool into
+// an SSRF vector (e.g. fetching internal/metadata URLs from the serverless function).
+const ALLOWED_DOWNLOAD_HOST = new URL(
+  process.env.UNSTRUCTURED_MCP_URL ?? 'https://mcp.transform.unstructured.io',
+).host;
+
 const downloadTextTool = tool({
   description:
     'Download transformed output from a pre-signed download_url with an HTTP GET. Use this to read the parsed content returned by get_transform_results.',
@@ -52,8 +59,19 @@ const downloadTextTool = tool({
     url: z.string().url().describe('The pre-signed download_url from the results.'),
   }),
   execute: async ({ url }) => {
+    let parsed: URL;
+    try {
+      parsed = new URL(url);
+    } catch {
+      throw new Error('Invalid download URL.');
+    }
+    if (parsed.protocol !== 'https:' || parsed.host !== ALLOWED_DOWNLOAD_HOST) {
+      throw new Error(
+        `Refusing to download from "${parsed.host}": only ${ALLOWED_DOWNLOAD_HOST} over HTTPS is allowed.`,
+      );
+    }
     // The URL is pre-signed: do not send an Authorization header here.
-    const response = await fetch(url);
+    const response = await fetch(parsed);
     if (!response.ok) {
       throw new Error(`Download failed: ${response.status}`);
     }
