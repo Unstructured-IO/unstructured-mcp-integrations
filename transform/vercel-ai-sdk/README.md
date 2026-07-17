@@ -8,6 +8,8 @@ files into structured data with no parsing code of your own.
 ~70 other formats) in an AI SDK app or agent and wants it turned into clean, structured
 Markdown the model can read and reason over.
 
+![Transform MCP × Vercel AI SDK — a chat app that parses a PDF into structured Markdown](assets/cover.png)
+
 ## Requirements
 
 - Node.js 18 or later.

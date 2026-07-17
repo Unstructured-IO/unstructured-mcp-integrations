@@ -11,5 +11,5 @@ notes: >
   Vercel AI SDK integration: a Next.js chat app (example/) wired to Transform MCP
   via @ai-sdk/mcp over streamable HTTP, with a one-click Deploy-to-Vercel button
   that uses the monorepo root-directory param. Verified end-to-end against the
-  production server. Next: submit to the Vercel template gallery (needs a live
-  demo URL + screenshot in assets/).
+  production server. Gallery cover (1440x960) is in assets/cover.png. Next:
+  submit to the Vercel template gallery (needs a live demo URL).
