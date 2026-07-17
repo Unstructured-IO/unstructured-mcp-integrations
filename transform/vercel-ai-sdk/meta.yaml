@@ -1,0 +1,15 @@
+# Integration metadata. Used to generate the index table in the root README.
+name: Vercel AI SDK
+category: agent-framework
+auth: api-key  # Unstructured API key as a Bearer token over streamable HTTP
+vendor_pr:     # Vercel template-gallery submission - add when filed
+review_status: not-started
+issue:
+docs_pr: https://github.com/Unstructured-IO/docs/pull/990
+owner: mikedownesdev
+notes: >
+  Vercel AI SDK integration: a Next.js chat app (example/) wired to Transform MCP
+  via @ai-sdk/mcp over streamable HTTP, with a one-click Deploy-to-Vercel button
+  that uses the monorepo root-directory param. Verified end-to-end against the
+  production server. Gallery cover (1440x960) is in assets/cover.png. Next:
+  submit to the Vercel template gallery (needs a live demo URL).
