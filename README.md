@@ -17,7 +17,7 @@ ready for RAG, vector stores, or agent memory. 60+ formats, one call.
 | --- | --- |
 | Endpoint | `https://mcp.transform.unstructured.io` |
 | Transport | Remote, streamable-HTTP (connect directly, or via `npx mcp-remote` for clients without native remote-MCP support) |
-| Tools | `request_file_upload_url`, `transform_files`, `check_transform_status`, `get_transform_results` |
+| Tools | `request_file_upload_url`, `start_transform_job`, `start_extraction_job`, `suggest_extraction_schema_for_file`, `check_job_status`, `get_job_results` |
 | Docs | https://docs.unstructured.io/transform/overview |
 | Support | mcp-support@unstructured.io |
 | Security | https://trust.unstructured.io |
@@ -31,6 +31,7 @@ where each one stands.
 | Integration | Category | Auth | Status | Owner |
 | --- | --- | --- | --- | --- |
 | [Cline](transform/cline/) | marketplace | OAuth / API key | Not started | @simoncoombes |
+| [Cursor](transform/cursor/) | marketplace | OAuth / API key | Not started | @ctrahey |
 
 ## Adding an integration
 

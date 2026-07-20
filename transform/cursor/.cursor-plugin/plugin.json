@@ -1,0 +1,38 @@
+{
+  "name": "unstructured-transform",
+  "displayName": "Unstructured Transform",
+  "description": "Turn any file — PDF, spreadsheet, scan, email, 60+ formats — into clean, agent-ready structured data (Markdown or JSON) without leaving your editor.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Unstructured",
+    "email": "mcp-support@unstructured.io"
+  },
+  "publisher": "Unstructured",
+  "homepage": "https://docs.unstructured.io/transform/overview",
+  "repository": "https://github.com/Unstructured-IO/unstructured-mcp-integrations",
+  "license": "Apache-2.0",
+  "logo": "assets/logo-400.png",
+  "keywords": [
+    "unstructured",
+    "document-parsing",
+    "pdf",
+    "ocr",
+    "rag",
+    "mcp",
+    "etl",
+    "data-extraction",
+    "chunking",
+    "embeddings"
+  ],
+  "category": "data",
+  "tags": [
+    "documents",
+    "parsing",
+    "rag",
+    "mcp",
+    "data"
+  ],
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "mcpServers": "./mcp.json"
+}

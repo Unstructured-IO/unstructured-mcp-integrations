@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "transform": {
+      "type": "streamable-http",
+      "url": "https://mcp.transform.unstructured.io"
+    }
+  }
+}
