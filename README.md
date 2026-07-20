@@ -31,6 +31,7 @@ where each one stands.
 | Integration | Category | Auth | Status | Owner |
 | --- | --- | --- | --- | --- |
 | [Cline](transform/cline/) | marketplace | OAuth / API key | Not started | @simoncoombes |
+| [Cursor](transform/cursor/) | marketplace | OAuth / API key | Not started | @ctrahey |
 
 ## Adding an integration
 

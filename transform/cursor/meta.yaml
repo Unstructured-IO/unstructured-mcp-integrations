@@ -1,0 +1,16 @@
+# Integration metadata. Used to generate the index table in the root README.
+name: Cursor
+category: marketplace
+auth: oauth / api-key  # Cursor-native remote OAuth is the default; a Bearer API-key variant is documented for headless use
+vendor_pr:             # Cursor Marketplace submission via https://cursor.com/marketplace/publish - add when filed
+review_status: not-started
+issue:
+docs_pr:
+owner: ctrahey
+notes: >
+  Cursor Marketplace + open-plugins.com listing. Full-bundle plugin: remote MCP server
+  (native OAuth), a task-first always-on rule, and a /parse command. A root-level
+  .cursor-plugin/marketplace.json makes the whole repo a valid Cursor marketplace source.
+  mcp.json dual-conforms to both Cursor and the Open Plugin spec (streamable-http + $schema),
+  and a root-level plugin.json mirrors the open spec for open-plugins.com discovery.
+  Submit at https://cursor.com/marketplace/publish. Licensed Apache-2.0.
