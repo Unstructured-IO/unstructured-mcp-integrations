@@ -65,6 +65,8 @@ the [root README](../../README.md); this only shows the Cursor config:
 }
 ```
 
+Both configs are ready to paste from [`example/`](example/).
+
 ## Parse example
 
 With the plugin installed, run the bundled command:

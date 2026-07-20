@@ -18,6 +18,9 @@
     "ocr",
     "rag",
     "mcp",
-    "data-extraction"
+    "etl",
+    "data-extraction",
+    "chunking",
+    "embeddings"
   ]
 }
