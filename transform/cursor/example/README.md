@@ -12,7 +12,7 @@ Paste one, then ask the agent:
 
 > Parse report.pdf to Markdown and summarize the key findings.
 
-Manual setup connects the `transform` server only; the always-on rule and the `/parse`
+Manual setup connects the `transform` server only; the always-on rule and the `/transform`
 command ship with the installed plugin.
 
 Never commit a real key. Replace `YOUR_UNSTRUCTURED_API_KEY` with your own key

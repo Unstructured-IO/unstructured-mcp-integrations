@@ -9,7 +9,7 @@ docs_pr:
 owner: ctrahey
 notes: >
   Cursor Marketplace + open-plugins.com listing. Full-bundle plugin: remote MCP server
-  (native OAuth), a task-first always-on rule, and a /parse command. A root-level
+  (native OAuth), a task-first always-on rule, and a /transform command. A root-level
   .cursor-plugin/marketplace.json makes the whole repo a valid Cursor marketplace source.
   mcp.json dual-conforms to both Cursor and the Open Plugin spec (streamable-http + $schema),
   and a root-level plugin.json mirrors the open spec for open-plugins.com discovery.
