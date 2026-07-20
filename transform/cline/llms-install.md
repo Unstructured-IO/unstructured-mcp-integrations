@@ -27,8 +27,8 @@ server is hosted; there is nothing to clone, build, or run locally.
    Tell the user to complete the sign-in there. No API key is needed.
 
 3. Verify the installation: the `transform` server should expose the tools
-   `request_file_upload_url`, `transform_files`, `check_transform_status`, and
-   `get_transform_results`.
+   `request_file_upload_url`, `start_transform_job`, `check_job_status`, and
+   `get_job_results`.
 
 ## API-key alternative (headless use)
 
