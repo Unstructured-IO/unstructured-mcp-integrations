@@ -1,4 +1,5 @@
 ---
+name: parse
 description: Parse a document into clean structured text or JSON with Unstructured Transform
 ---
 
