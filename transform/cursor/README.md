@@ -25,13 +25,16 @@ This is a full Cursor plugin, not just an MCP entry. It bundles:
 
 ## Connect
 
-Install the plugin from the Cursor Marketplace (recommended) — Cursor writes the bundled
-`mcp.json` and connects the `transform` server for you. On first connection a browser
-window opens for OAuth sign-in; there is no API key to paste.
+**Once this plugin is published to the Cursor Marketplace,** installing it is the
+recommended path — Cursor writes the bundled `mcp.json`, registers the rule and `/parse`
+command, and connects the `transform` server for you. A browser window opens for OAuth
+sign-in on first connection; there is no API key to paste.
 
-To wire it up manually instead, add this to `~/.cursor/mcp.json` (global) or
-`.cursor/mcp.json` (per project). The endpoint, transport, and tool list are in the
-[root README](../../README.md); this only shows the Cursor config:
+Until then — or if you only want the server — wire up the MCP server manually: add this to
+`~/.cursor/mcp.json` (global) or `.cursor/mcp.json` (per project). **Manual setup connects
+the `transform` server only**; the always-on rule and the `/parse` command ship with the
+installed plugin, so install it to get those. The endpoint, transport, and tool list are in
+the [root README](../../README.md); this only shows the Cursor config:
 
 **OAuth, no API key (default):**
 
@@ -64,13 +67,13 @@ To wire it up manually instead, add this to `~/.cursor/mcp.json` (global) or
 
 ## Parse example
 
-Once the `transform` server is connected, run the bundled command:
+With the plugin installed, run the bundled command:
 
 ```
 /parse report.pdf
 ```
 
-Or just ask in natural language:
+Or, with just the `transform` server connected, ask in natural language:
 
 > Parse report.pdf to Markdown and summarize the key findings.
 
