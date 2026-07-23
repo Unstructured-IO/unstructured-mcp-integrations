@@ -98,8 +98,13 @@ export async function POST(req: Request) {
       tools,
       // Async jobs need several wait -> poll cycles; give the loop room.
       stopWhen: stepCountIs(25),
-      // Close the MCP connection once the full response (incl. tool steps) is done.
-      onFinish: async () => {
+      // Cancel model/tool execution if the client disconnects.
+      abortSignal: req.signal,
+      // Close the MCP connection when the response finishes, aborts, or errors.
+      onEnd: async () => {
+        await mcpClient.close();
+      },
+      onAbort: async () => {
         await mcpClient.close();
       },
       onError: async () => {

@@ -7,7 +7,7 @@ const SAMPLE_URL =
   'https://raw.githubusercontent.com/Unstructured-IO/unstructured/main/example-docs/pdf/layout-parser-paper.pdf';
 
 export default function Home() {
-  const { messages, sendMessage, status } = useChat();
+  const { messages, sendMessage, status, error } = useChat();
   const [input, setInput] = useState('');
 
   const busy = status === 'submitted' || status === 'streaming';
@@ -61,6 +61,11 @@ export default function Home() {
             })}
           </div>
         ))}
+        {error && (
+          <div className="msg assistant" role="alert" style={{ color: '#fca5a5', borderColor: '#7f1d1d' }}>
+            Something went wrong while processing your request. Please try again.
+          </div>
+        )}
       </div>
 
       <div className="composer">
@@ -69,6 +74,7 @@ export default function Home() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Paste a document URL and ask a question…"
+            aria-label="Chat prompt — paste a public document URL and ask a question"
             disabled={busy}
           />
           <button type="submit" disabled={busy || !input.trim()}>
