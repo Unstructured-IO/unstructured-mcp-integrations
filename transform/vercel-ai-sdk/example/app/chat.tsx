@@ -6,8 +6,9 @@ import { useState } from 'react';
 const SAMPLE_URL =
   'https://raw.githubusercontent.com/Unstructured-IO/unstructured/main/example-docs/pdf/layout-parser-paper.pdf';
 
+// Keep in sync with the Deploy button in this folder's README.md.
 const DEPLOY_URL =
-  'https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FUnstructured-IO%2Funstructured-mcp-integrations&root-directory=transform%2Fvercel-ai-sdk%2Fexample&env=ANTHROPIC_API_KEY,UNSTRUCTURED_API_KEY';
+  'https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FUnstructured-IO%2Funstructured-mcp-integrations&root-directory=transform%2Fvercel-ai-sdk%2Fexample&env=ANTHROPIC_API_KEY,UNSTRUCTURED_API_KEY&envDescription=API%20keys%20for%20Claude%20and%20the%20Unstructured%20Transform%20MCP%20server&envLink=https%3A%2F%2Fgithub.com%2FUnstructured-IO%2Funstructured-mcp-integrations%2Fblob%2Fmain%2Ftransform%2Fvercel-ai-sdk%2Fexample%2F.env.example&project-name=transform-mcp-vercel-ai-sdk&repository-name=transform-mcp-vercel-ai-sdk';
 
 export default function Chat({ configured }: { configured: boolean }) {
   const { messages, sendMessage, status, error } = useChat();
