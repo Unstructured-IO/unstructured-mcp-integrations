@@ -1,0 +1,17 @@
+{
+  "name": "unstructured-mcp-integrations",
+  "owner": {
+    "name": "Unstructured",
+    "email": "mcp-support@unstructured.io"
+  },
+  "metadata": {
+    "description": "Official Unstructured integrations for the Transform MCP server: turn any file into agent-ready structured data."
+  },
+  "plugins": [
+    {
+      "name": "unstructured-transform",
+      "source": "transform/cursor",
+      "description": "Turn any file — PDF, spreadsheet, scan, email, 60+ formats — into clean, agent-ready structured data (Markdown or JSON) without leaving your editor."
+    }
+  ]
+}

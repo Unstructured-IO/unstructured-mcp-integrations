@@ -66,7 +66,7 @@ Once the `transform` server is connected, ask Cline to parse a file:
 
 Cline uploads the file, starts a transform job, polls until it finishes, and reads
 back the structured result. The four tools it uses are `request_file_upload_url`,
-`transform_files`, `check_transform_status`, and `get_transform_results`.
+`start_transform_job`, `check_job_status`, and `get_job_results`.
 
 ## Limits
 

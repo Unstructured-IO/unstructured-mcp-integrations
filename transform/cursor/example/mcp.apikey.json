@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "transform": {
+      "type": "streamable-http",
+      "url": "https://mcp.transform.unstructured.io",
+      "headers": {
+        "Authorization": "Bearer YOUR_UNSTRUCTURED_API_KEY"
+      }
+    }
+  }
+}

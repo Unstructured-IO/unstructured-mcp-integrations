@@ -1,0 +1,13 @@
+---
+description: Use the Transform MCP server to turn any file (PDF, spreadsheet, scan, email, image, 60+ formats) into clean structured text or JSON
+alwaysApply: true
+---
+
+unstructured-transform: When the user shares or references a document file — a PDF, DOCX, PPTX, XLSX, HTML, EML, image, or scan — and wants its contents read, summarized, extracted, or turned into structured data, use the connected `transform` MCP server rather than trying to read the raw bytes yourself.
+
+Workflow:
+- If the file is reachable at a public `https://` URL, pass that URL straight to the transform job — no upload needed.
+- If it is a local path or lives in the workspace, request an upload URL first, `PUT` the bytes to it, then start the job with the returned file reference.
+- Start the transform job (Markdown output is the best default for reasoning over the content; use JSON when the user needs element/layout structure), poll until it finishes, then read back the structured result.
+
+Prefer this over manual parsing for anything scanned, image-based, or table-heavy — the server handles OCR, layout, tables, chunking, and embeddings across 60+ formats. Never paste an API key into chat; the server signs in via OAuth on first use.
