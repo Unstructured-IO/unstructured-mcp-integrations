@@ -58,6 +58,35 @@ body {
   word-break: break-all;
 }
 
+.preview {
+  border: 1px solid #3a3f2a;
+  background: #1a1c14;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #d8dbc4;
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.preview strong {
+  color: #e8dd8a;
+}
+
+.preview-cta {
+  margin-top: 10px;
+}
+
+.preview-cta a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.preview-cta a:hover {
+  text-decoration: underline;
+}
+
 .messages {
   display: flex;
   flex-direction: column;

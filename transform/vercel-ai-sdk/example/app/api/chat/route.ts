@@ -8,6 +8,7 @@ import {
 } from 'ai';
 import { z } from 'zod';
 import { createTransformMCPClient } from '@/lib/mcp';
+import { isConfigured } from '@/lib/config';
 
 // Allow streaming responses up to 60 seconds (document parsing can take a moment).
 export const maxDuration = 60;
@@ -80,6 +81,15 @@ const downloadTextTool = tool({
 });
 
 export async function POST(req: Request) {
+  // Backstop for a keyless demo deploy (the UI already disables sending):
+  // return a clear message instead of a 500 if the keys aren't configured.
+  if (!isConfigured()) {
+    return new Response(
+      'This demo is not configured with API keys. Deploy your own copy with ANTHROPIC_API_KEY and UNSTRUCTURED_API_KEY to use it.',
+      { status: 503 },
+    );
+  }
+
   const { messages }: { messages: UIMessage[] } = await req.json();
 
   const mcpClient = await createTransformMCPClient();
