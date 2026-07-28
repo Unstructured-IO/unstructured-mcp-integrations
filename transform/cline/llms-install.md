@@ -26,9 +26,11 @@ server is hosted; there is nothing to clone, build, or run locally.
 2. On first connection, `mcp-remote` opens a browser window for OAuth sign-in.
    Tell the user to complete the sign-in there. No API key is needed.
 
-3. Verify the installation: the `transform` server should expose the tools
-   `request_file_upload_url`, `start_transform_job`, `check_job_status`, and
-   `get_job_results`.
+3. Verify the installation: the `transform` server should expose the parsing
+   tools `request_file_upload_url`, `start_transform_job`, `check_job_status`,
+   and `get_job_results`, the structured-data-extraction tools
+   `suggest_extraction_schema_for_file` and `start_extraction_job`, and
+   `get_instructions`.
 
 ## API-key alternative (headless use)
 

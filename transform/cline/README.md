@@ -65,8 +65,27 @@ Once the `transform` server is connected, ask Cline to parse a file:
 > Parse report.pdf to Markdown and summarize the key findings.
 
 Cline uploads the file, starts a transform job, polls until it finishes, and reads
-back the structured result. The four tools it uses are `request_file_upload_url`,
-`start_transform_job`, `check_job_status`, and `get_job_results`.
+back the structured result. The tools it drives for a parse are
+`request_file_upload_url`, `start_transform_job`, `check_job_status`, and
+`get_job_results`.
+
+## Structured data extraction example
+
+To pull specific fields out of a document instead of converting the whole thing,
+ask for an extraction:
+
+> Extract each line item, the invoice total, and the due date from invoice.pdf as JSON.
+
+Cline parses the file first, then runs the extraction over the parsed element JSON
+using `suggest_extraction_schema_for_file` (when you have not supplied a schema)
+and `start_extraction_job`, polling with the same `check_job_status` and
+`get_job_results` tools. Results come back as JSON matching the schema, wrapped
+with the source filename and the element JSON reference they were pulled from.
+
+Extraction quality depends on the parse, so for images, PowerPoint, and PDFs ask
+for a high-fidelity parse if a first attempt looks sparse. See
+[Structured data extraction](https://docs.unstructured.io/transform/sde) for
+prompt patterns.
 
 ## Limits
 
