@@ -1,0 +1,13 @@
+{
+  "name": "unstructured-transform",
+  "version": "1.0.0",
+  "description": "Turn PDFs, DOCX, PPTX, XLSX, HTML, emails, and 60+ file types into clean structured Markdown, JSON, HTML, or text via the Unstructured Transform MCP server.",
+  "author": {
+    "name": "Unstructured",
+    "url": "https://unstructured.io"
+  },
+  "homepage": "https://transform.unstructured.io",
+  "repository": "https://github.com/Unstructured-IO/unstructured-mcp-integrations",
+  "license": "Apache-2.0",
+  "keywords": ["unstructured", "unstructured transform", "document parsing", "pdf parsing", "ocr", "rag preprocessing"]
+}

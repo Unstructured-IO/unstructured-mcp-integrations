@@ -8,8 +8,11 @@ issue:
 docs_pr:
 owner: nisha-pm
 notes: >
-  MCP-only listing (no skills/commands/agents). Adds external_plugins/unstructured-transform/
-  with a single .mcp.json to xai-org/plugin-marketplace, plus a marketplace.json entry
-  (source: local, category: development — the closest existing bucket to
-  deployment/monitoring/development/database/observability). Mirrors the existing
-  Neon listing there, which is also a bare .mcp.json under external_plugins/.
+  MCP-only listing (no skills/commands/agents). xai-org/plugin-marketplace source
+  is `url` (this repo) with `path: transform/grok`, pinned to a commit SHA on main —
+  not vendored into external_plugins/ — per their CONTRIBUTING.md guidance to source
+  branded plugins from the official org rather than a personal account. Requires
+  this folder's .mcp.json and .grok-plugin/plugin.json (added once this PR merges,
+  since the SHA must point at a stable commit on main, not this branch).
+  category: development (closest existing bucket to
+  deployment/monitoring/development/database/observability).

@@ -8,9 +8,11 @@ into clean, agent-ready structured data (Markdown or JSON) as part of a build se
 Grok Build session and wants it turned into structured text the agent can read and
 reason over — for summarization, extraction, or RAG ingestion.
 
-This is an MCP-only listing, not a full plugin bundle. It registers the remote
-`transform` server via the Grok plugin marketplace's `external_plugins/` convention
-(mirrors the existing Neon listing there) — no skills, commands, or agents included.
+This is an MCP-only listing, not a full plugin bundle. [`.grok-plugin/plugin.json`](.grok-plugin/plugin.json)
+and [`.mcp.json`](.mcp.json) in this folder are the actual plugin source: the xAI
+marketplace entry is a `url` source pinned to a commit SHA of this repo, scoped to
+this subdirectory (`path: transform/grok`) — no separate copy vendored in the xAI
+fork. No skills, commands, or agents included.
 
 ## Requirements
 
@@ -28,7 +30,7 @@ server for you.
 Until then, or to connect without the marketplace, add this to your MCP config
 manually. The endpoint, transport, and tool list are in the
 [root README](../../README.md); this only shows the Grok-specific config, and is
-ready to paste from [`example/.mcp.json`](example/.mcp.json):
+ready to paste from [`.mcp.json`](.mcp.json):
 
 ```json
 {
