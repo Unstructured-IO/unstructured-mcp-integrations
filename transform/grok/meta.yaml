@@ -1,0 +1,15 @@
+# Integration metadata. Used to generate the index table in the root README.
+name: Grok Build
+category: marketplace
+auth: oauth  # browser sign-in on first tool call, no API key
+vendor_pr:     # xai-org/plugin-marketplace PR - add when filed
+review_status: not-started
+issue:
+docs_pr:
+owner: nisha-pm
+notes: >
+  MCP-only listing (no skills/commands/agents). Adds external_plugins/unstructured-transform/
+  with a single .mcp.json to xai-org/plugin-marketplace, plus a marketplace.json entry
+  (source: local, category: development — the closest existing bucket to
+  deployment/monitoring/development/database/observability). Mirrors the existing
+  Neon listing there, which is also a bare .mcp.json under external_plugins/.
