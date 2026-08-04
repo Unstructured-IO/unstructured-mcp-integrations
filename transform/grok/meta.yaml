@@ -8,11 +8,12 @@ issue:
 docs_pr:
 owner: nisha-pm
 notes: >
-  MCP-only listing (no skills/commands/agents). xai-org/plugin-marketplace source
-  is `url` (this repo) with `path: transform/grok`, pinned to a commit SHA on main —
-  not vendored into external_plugins/ — per their CONTRIBUTING.md guidance to source
-  branded plugins from the official org rather than a personal account. Requires
-  this folder's .mcp.json and .grok-plugin/plugin.json (added once this PR merges,
-  since the SHA must point at a stable commit on main, not this branch).
+  MCP-only listing (no skills/commands/agents). This folder's .mcp.json and
+  .grok-plugin/plugin.json (both added in this PR) are the actual plugin source.
+  xai-org/plugin-marketplace source is `url` (this repo) with `path: transform/grok`
+  — not vendored into external_plugins/ — per their CONTRIBUTING.md guidance to
+  source branded plugins from the official org rather than a personal account.
+  What waits on this PR merging is the vendor-side entry itself: the SHA it pins
+  must point at a stable commit on main, not this branch.
   category: development (closest existing bucket to
   deployment/monitoring/development/database/observability).
