@@ -1,8 +1,11 @@
 # Grok Build
 
-Connect the Unstructured Transform MCP server to [Grok Build](https://x.ai/news/grok-plugin-marketplace)
-so the agent can turn any file — PDF, spreadsheet, scan, email, image, 60+ formats —
-into clean, agent-ready structured data (Markdown or JSON) as part of a build session.
+Production-grade document processing your AI agent calls as MCP tools. Connect the
+Unstructured Transform MCP server to [Grok Build](https://x.ai/news/grok-plugin-marketplace)
+and parse PDFs, invoices, spreadsheets, and 60+ file types with tables and layout
+intact — partitioned, enriched, chunked, and embedded output ready for RAG, vector
+stores, or agent memory. One call, no separate pipeline to wire up, 15,000 free
+pages a month.
 
 **Use when:** the user shares or references a PDF, spreadsheet, scan, or email in a
 Grok Build session and wants it turned into structured text the agent can read and

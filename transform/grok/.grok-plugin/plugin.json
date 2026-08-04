@@ -1,7 +1,7 @@
 {
   "name": "unstructured-transform",
-  "version": "1.0.0",
-  "description": "Turn PDFs, DOCX, PPTX, XLSX, HTML, emails, and 60+ file types into clean structured Markdown, JSON, HTML, or text via the Unstructured Transform MCP server.",
+  "version": "1.0.1",
+  "description": "Production-grade document processing your AI agents call as MCP tools. Parse PDFs, invoices, spreadsheets, and 60+ file types with tables and layout intact — partitioned, enriched, chunked, and embedded output ready for RAG, vector stores, or agent memory. One call, no separate pipeline to wire up, 15,000 free pages a month, OAuth sign-in and no API key required.",
   "author": {
     "name": "Unstructured",
     "url": "https://unstructured.io"
