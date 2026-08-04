@@ -1,0 +1,19 @@
+# Integration metadata. Used to generate the index table in the root README.
+name: Grok Build
+category: marketplace
+auth: oauth  # browser sign-in on first tool call, no API key
+vendor_pr:     # xai-org/plugin-marketplace PR - add when filed
+review_status: not-started
+issue:
+docs_pr:
+owner: nisha-pm
+notes: >
+  MCP-only listing (no skills/commands/agents). This folder's .mcp.json and
+  .grok-plugin/plugin.json (both added in this PR) are the actual plugin source.
+  xai-org/plugin-marketplace source is `url` (this repo) with `path: transform/grok`
+  — not vendored into external_plugins/ — per their CONTRIBUTING.md guidance to
+  source branded plugins from the official org rather than a personal account.
+  What waits on this PR merging is the vendor-side entry itself: the SHA it pins
+  must point at a stable commit on main, not this branch.
+  category: development (closest existing bucket to
+  deployment/monitoring/development/database/observability).

@@ -33,6 +33,7 @@ where each one stands.
 | [Cline](transform/cline/) | marketplace | OAuth / API key | Not started | @simoncoombes |
 | [Vercel AI SDK](transform/vercel-ai-sdk/) | agent-framework | API key | Not started | @mikedownesdev |
 | [Cursor](transform/cursor/) | marketplace | OAuth / API key | Not started | @ctrahey |
+| [Grok Build](transform/grok/) | marketplace | OAuth | Not started | @nisha-pm |
 
 ## Adding an integration
 
